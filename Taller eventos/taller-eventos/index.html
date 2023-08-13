@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo</title>
+    <style>
+        #contenedorBoton {
+            padding: 5px;
+            background-color: green;
+        }
+    </style>
+    <script src="eventos.js"></script>
+
+</head>
+<body>
+    <h1>¡Hola, mundo!</h1>
+    <div id="contenedorBoton">
+        <button id="saludarBtn">Saludar</button>
+    </div>
+    <script src="eventos.js"></script>
+    <script>
+        const btn = document.getElementById("saludarBtn");
+        btn.addEventListener("click", () => {
+            alert("¡Hola! ¡Bienvenido!");
+        });
+    </script>
+</body>
+</html>
